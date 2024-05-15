@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #202124;
+  --terciary: #e4002c;
+  font-family: 'Rubik', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header > button {
+  padding: 2px;
+  height: 20px;
+  width: 100px;
+}
+#logo {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+#addRES {
+  width: 6.25rem;
+  padding: 10px;
+  background-color: #e4002c;
+  align-self: center;
+  border-radius: 1rem;
+  font-weight: bolder;
+  border: 2px solid #e4002c;
+  box-shadow: 0px 0px 25px -4px #202124;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.125rem;
+}
+form {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #e4002c;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 25px -4px #202124;
+}
+form > div {
+  padding: 15px;
+}
+.goodBye {
+  display: none;
+}
+
+form > button {
+  width: 6.25rem;
+  padding: 10px;
+  background-color: #e4002c;
+  align-self: center;
+  border-radius: 1rem;
+  font-weight: bolder;
+}
+input {
+  padding: 0.3125rem;
+  margin-left: 0.3125rem;
+  border: #202124 1px solid;
+  border-radius: 0.625rem;
+}
+.productos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.productos > div {
+  width: 100%;
+  text-align: center;
+}
+.productos > div > h2 {
+  text-align: center;
+  color: #e4002c;
+  transition: transform 0.3s ease-in-out;
+}
+.Card {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1.875rem;
+  padding: 50px;
+  cursor: pointer;
+}
+.productos > div > h2:hover {
+  color: #202124;
+}
+
+.Card > img {
+  width: 15rem;
+  height: 12rem;
+  border-radius: 15px;
+  margin: 20px 0 20px 0;
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px #202124;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    margin-top: 80px;
+    position: sticky;
+  }
+  form > div {
+    padding: 15px;
+  }
+}

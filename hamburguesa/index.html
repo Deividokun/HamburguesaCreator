@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://static.vecteezy.com/system/resources/previews/017/032/871/original/burger-logo-illustration-fast-food-logo-emblem-label-burger-vintage-design-business-burger-vector.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/hamburguesa/main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Brgr CHAMP</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/017/032/871/original/burger-logo-illustration-fast-food-logo-emblem-label-burger-vintage-design-business-burger-vector.jpg"
+        alt=""
+        id="logo"
+      />
+      <div id="botones">
+        <button id="addRES">Remove Items</button>
+      </div>
+    </header>
+    <main>
+      <form class="bye">
+        <h3>Crear un nuevo producto</h3>
+        <div>
+          <label>Nombre</label>
+          <input placeholder="nombre del producto" id="nombre" />
+        </div>
+        <div>
+          <label>Imagen</label>
+          <input placeholder="imagen del producto" id="imagen" />
+        </div>
+        <div>
+          <label>Precio</label>
+          <input placeholder="precio del producto" id="precio" type="number" />
+        </div>
+        <div>
+          <label for="tipo">Tipo</label>
+          <select id="tipo">
+            <option value="hamburguesa">Hamburguesa</option>
+            <option value="wrap">Wrap</option>
+            <option value="acompañante">Acompañante</option>
+            <option value="bebida">Bebida</option>
+          </select>
+        </div>
+        <button id="botonete" type="button">PUBLICAR</button>
+      </form>
+      <div class="productos">
+        <div class="hamburguesas"></div>
+        <div class="wraps"></div>
+        <div class="acompañantes"></div>
+        <div class="bebida"></div>
+      </div>
+    </main>
+  </body>
+</html>
